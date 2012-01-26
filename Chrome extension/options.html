@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function showNotification(text)
+{
+	var notification=webkitNotifications.createNotification(
+	'images/icon.png',
+	'Kurukshetra 2012',
+	text
+	);
+	notification.show();
+}
+function saveSettings()
+{
+	if(document.getElementsByName("notification")[0].checked)
+	{
+		localStorage["notification"]="true";
+		showNotification("Desktop Notification Enabled");
+	}
+	else
+		localStorage["notification"]="false";
+}
+
+</script>
+</head>
+<body>
+Allow Desktop Notification : 
+<input type="radio" name="notification" value="yes" checked>Yes&nbsp;&nbsp;&nbsp;
+<input type="radio" name="notification" value="no">No<br><br>
+<input type="button" name="Save" value="Save" onClick="saveSettings()">
+<br>
+<br>
+Update the extension when mentioned to get more benefits
+</body>
+</html>

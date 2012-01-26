@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="http://extension.kurukshetra.org.in/styles/extensionstyle.css?updateid=2">
+<!--<link rel="stylesheet" href="styles/extensionstyle.css">-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cycle.lite.js"></script>
+<!--<script src="jquery.js"></script>-->
+<script src="http://extension.kurukshetra.org.in/js/chromeextensionscript.js?updateid=2"></script>
+<!--<script src="js/chromeextensionscript.js"></script>-->
+<html>
+<body onLoad="loadData()">
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header-->
+<div id="header">
+<a href="http://kurukshetra.org.in" target="blank" title="Anna University - CEG"><img src="images/logo.png" height="60" width="247"></a>
+<a href="options.html" style="float:right; padding-right:15px" target="_blank"><img src="images/gear.png"></a>
+<div id="sponsorsList" style="float:right; padding-right:95px;"></div>
+</div>
+<!-- Header Ends-->
+
+
+<!-- Major Updates -->
+<div id="majorUpdatesPanel">
+<div class="title" id="majorUpdatesPanelTitle">Major Updates</div>
+<div  id="mupdate_loading" style="float:right;"><img src="images/fbloading.gif" ></div>
+<div id="mupdate"></div>
+</div>
+<!-- Major Updates Ends-->
+
+<!-- Latest Updates -->
+<div id="latestUpdatesPanel">
+<div class="title" id='latestUpdatesPanelTitle'>Latest Updates</div>
+<div  id="lupdate_loading" style="float:right;"><img src="images/fbloading.gif" ></div>
+Click on the <img src="images/icon.png" width="15" height="15"> icon below to get a gist<br>
+<br>
+<div id="lupdate"></div>
+</div>
+<!-- Latest Updates Ends-->
+
+<!-- Image scroller or Sponsor updates -->
+<div id="imageUpdatesPanel"><div class="title" id='imageUpdatesPanelTitle'>Guest Lectures - This year</div>
+<div  id="iupdate_loading" style="float:right;"><img src="images/fbloading.gif" ></div>
+<table id='iupdateTable' style="display:none;">
+<tr>
+<td><div id="iupdate"></div></td>
+<td><img src="http://extension.kurukshetra.org.in/images/up.JPG" class='navigation' onClick="updateLectures(1)"><br><br><img src="http://extension.kurukshetra.org.in/images/down.jpg" class='navigation' onClick="updateLectures(-1)"></td>
+</tr>
+</table>
+</div>
+<!-- Image scroller or Sponsor updates Ends-->
+
+<!-- Footer -->
+<div id="footer">Kurukshetra 2012</div>
+<!-- Footer Ends -->
+</div>
+<!-- Wrapper Ends -->
+</body>
+</html>
